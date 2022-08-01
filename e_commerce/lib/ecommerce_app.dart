@@ -1,3 +1,4 @@
+import 'package:e_commerce/screens/location/location_screen.dart';
 import 'package:e_commerce/screens/onBoarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/screens/navigation/navigation_screen.dart';
@@ -18,6 +19,7 @@ class EcommerceApp extends StatelessWidget {
       routes: {
         NavigationScreen.id: (context) => NavigationScreen(),
         OnBoardingScreen.id: (context) => OnBoardingScreen(),
+        LocationScreen.id: (context) => LocationScreen(),
       },
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,

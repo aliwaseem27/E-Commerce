@@ -1,3 +1,4 @@
+import 'package:e_commerce/screens/location/location_screen.dart';
 import 'package:flutter/material.dart';
 
 class DeliveryAddress extends StatelessWidget {
@@ -20,15 +21,20 @@ class DeliveryAddress extends StatelessWidget {
                   Text("Now"),
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text(
-                    "Your Street Name, City",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                  ),
-                  Icon(Icons.keyboard_arrow_down),
-                ],
+              GestureDetector(
+                onTap: (){
+                  Navigator.of(context).pushNamed(LocationScreen.id);
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Your Street Name, City",
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    ),
+                    Icon(Icons.keyboard_arrow_down),
+                  ],
+                ),
               ),
             ],
           ),
