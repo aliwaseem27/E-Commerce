@@ -1,6 +1,6 @@
 # STORY - E-Commerce Fake Store
 
-A Flutter project to practice the some of the main topics in App Development, such as :
+A Flutter project to practice some of the main topics in App Development, such as :
 1. State management using [Riverpod](https://riverpod.dev/).
 2. UI design and trying to implement best practices.
 3. Separation of Business Logic from the Interface.
